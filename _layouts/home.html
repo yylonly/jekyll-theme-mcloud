@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>{{site.title}}</h1>
+        <p>{{site.description}} </p>
+    </div>
+</div>
+
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+      
+    {% for post in site.posts limit:3 %}
+	<div class="col-md-4">
+	  <h2>{{post.title}}</h2>
+		 <p>{{ post.content | truncate:500 }}</p>
+	  <p><a class="btn btn-default" href="{{post.url}}" role="button">View details &raquo;</a></p>
+	</div>
+    {% endfor %}    
+	</div>
+  </div>
+</div>  
+
+
+
