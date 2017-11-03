@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "mcloud"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.2"
   spec.authors       = ["yylonly"]
   spec.email         = ["yylonly@gmail.com"]
 
